@@ -5,11 +5,20 @@
     <link rel="stylesheet" href="css/mawbutton.css"/>
 </head>
 <body>
-	<button class="mawbutton" data-effect="ripple">Click Me</button>
-	<button class="mawbutton red" data-effect="ripple">Click Me</button>
-	<button class="mawbutton green" data-effect="ripple">Click Me</button>
-	<button class="mawbutton blue" data-effect="ripple">Click Me</button>
+
+    <button>Click Me</button>
+    <button class="green">Click Me</button>
+    <button class="blue">Click Me</button>
+    <button class="red">Click Me</button>
+
 	<script type="text/javascript" src="js/vendor/jquery.js"></script>
 	<script type="text/javascript" src="js/mawbutton.js"></script>
+    <script type="text/javascript">
+        $('button').mawbutton({
+            speed : 300,
+            scale : 3,
+            effect : "ripple"
+        });
+    </script>
 </body>
 </html>
