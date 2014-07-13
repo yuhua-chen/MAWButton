@@ -3,21 +3,48 @@ MAWButton
 
 A ripple button inspired by Google material design.
 
+-----
+
 Required
 ========
 
  - jQuery
+
+----
  
 Browser Support
 ===============
 
 Modern browser like Chrome, Safari, FireFox...etc.
 
-
+-----
 Usage
 =====
+First of all, you have to inlcude the style.
 
+```
+<link rel="stylesheet" href="css/mawbutton.css">
+```
 
+And script as well.  
+
+```
+<script src="mawbutton.js"></script>
+```  
+
+Then add a class `mawbutton` into any element you want and set the data attribute(`data-effect`) to determine what effect should be used.  
+```
+<button class="mawbutton" data-effect="ripple">Click me</button>
+```
+-----
+Effects
+======  
+
+|Name|Effect|
+|-|:-|
+|`ripple`| Basically effect like the Google material design. |
+|`flash` | The background color will flicker in the wink of an eye. |
+|`wave` | Still working on it. |
 
 
 -----
@@ -26,7 +53,7 @@ LICENSE
 =======
 The MIT License (MIT)
 
-Copyright (c) 2014 Michael Chen
+Copyright (c) 2014 Michael Chen , Will Huang , Amin Lee
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
