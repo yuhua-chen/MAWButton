@@ -1,6 +1,39 @@
 .mawbutton
 {
-	width: 100px;
-	height: 100px;
-	background-color:#000;
+	outline: none;
+	border: 0px;
+	width: 221px;
+	height: 54px;
+	background-color:#0C9AF2;
+	overflow: hidden;
+	position: relative;
+	border-radius: 9px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: white;
+	font-family: 'Lobster', cursive;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
 }
+
+.mawbutton .mawbutton-ripple{
+  position: absolute;
+  border-radius: 100%;
+  width: 0px;
+  height: 0px;
+  background: rgba(0,0,0, .05);
+  transition: all .3s ease-out;
+   -webkit-transition: all .3s ease-out;
+   -moz-transition: all .3s ease-out;
+   -o-transition: all .3s ease-out;
+}
+.mawbutton .mawbutton-stop{
+	-webkit-transition: none !important;
+ 	 transition: none !important;
+}
+.mawbutton.red{background-color: #dd0d32;}
+.mawbutton.green{background-color: #04A43B;}
+.mawbutton.blue{background-color: #405A83;}
+
