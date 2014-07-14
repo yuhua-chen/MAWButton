@@ -21,7 +21,7 @@
 					h = $this.height();
 				var targetX= e.pageX - posX;
 				var targetY= e.pageY - posY;
-				var ratio = settings.scale / 2;
+				var ratio = settings.scale / 2;    							
 
 				//Animate Start
 				$effectElem = $this.find(".mawbutton-"+settings.effect);
@@ -42,7 +42,15 @@
 
 				//Animate End
 				setTimeout(function(){
-					$effectElem.addClass("mawbutton-stop").attr("style","");
+					$effectElem.addClass("mawbutton-ripple-out").css({
+						"transition-duration" : settings.speed+"ms",
+						"-webkit-transition-duration" : settings.speed+"ms",
+						"-moz-transition-duration" : settings.speed+"ms",
+						"-o-transition-duration" : settings.speed+"ms"
+					});
+					setTimeout(function(){
+						$effectElem.removeClass("mawbutton-ripple-out").addClass("mawbutton-stop").attr("style","");
+					},settings.speed);
 				}, settings.speed);
 			});
 		});

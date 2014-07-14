@@ -24,15 +24,25 @@
   width: 0px;
   height: 0px;
   background: rgba(0,0,0, .05);
-  transition: all .3s ease-out;
-   -webkit-transition: all .3s ease-out;
-   -moz-transition: all .3s ease-out;
-   -o-transition: all .3s ease-out;
+  transition: all 150ms ease-out;
+   -webkit-transition: all 150ms ease-out;
+   -moz-transition: all 150ms ease-out;
+   -o-transition: all 150ms ease-out;
 }
+
+.mawbutton .mawbutton-ripple-out{
+  background: rgba(0,0,0, .0);
+  transition: background 150ms ease-out;
+   -webkit-transition: background 150ms ease-out;
+   -moz-transition: background 150ms ease-out;
+   -o-transition: background 150ms ease-out;
+}
+
 .mawbutton .mawbutton-stop{
 	-webkit-transition: none !important;
  	 transition: none !important;
 }
+
 .mawbutton.red{background-color: #dd0d32;}
 .mawbutton.green{background-color: #04A43B;}
 .mawbutton.blue{background-color: #405A83;}
