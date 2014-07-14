@@ -21,10 +21,7 @@
 					h = $this.height();
 				var targetX= e.pageX - posX;
 				var targetY= e.pageY - posY;
-				var ratio = settings.scale / 2;
-
-				$this.addClass("scale");
-    							
+				var ratio = settings.scale / 2;    							
 
 				//Animate Start
 				$effectElem = $this.find(".mawbutton-"+settings.effect);
