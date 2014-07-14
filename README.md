@@ -3,6 +3,8 @@ MAWButton
 
 A ripple button inspired by Google material design.
 
+![Demo](https://raw.githubusercontent.com/yuhua-chen/MAWButton/master/demo.html)
+
 
 Required
 ========
@@ -19,19 +21,48 @@ Usage
 First of all, you have to inlcude the style.
 
 ```html
-<link rel="stylesheet" href="css/mawbutton.css">
+<link rel="stylesheet" href="mawbutton.css">
 ```
 
-And script as well.  
+And include script as well.  
 
 ```html
 <script src="mawbutton.js"></script>
 ```  
 
-Then add a class `mawbutton` into any element you want and set the data attribute(`data-effect`) to determine what effect should be used.  
+You may add some elements like this:  
 ```html
-<button class="mawbutton" data-effect="ripple">Click me</button>
+<button>Click Me</button>                   <!-- default -->
+<button class="green">Click Me</button>     <!-- with default green color -->
+<button class="blue">Click Me</button>      <!-- with default blue color -->
+<button class="red">Click Me</button>       <!-- with default red color -->
 ```
+
+To init the mawbutton with default options:
+
+```html
+<script>
+    $('button').mawbutton();
+</script>
+```
+or with custom options:   
+```html
+<script>
+    $('button').mawbutton({
+        speed : 250,
+        scale : 2,
+        effect : 'ripple'
+    });
+</script>
+```
+
+Options
+=======
+|Option|Default|Type|Description|
+|:-----|:------|:---|:----------|
+|`speed` | 300   |int | The duration which are given in milliseconds of effect.|
+|`scale` | 3     |int | The size how the ripple will scale to in animation.| 
+|`effect`| ripple|string| Determine which effect you want to use.|
 
 Effects
 ======  
@@ -39,7 +70,7 @@ Effects
 |Name|Effect|
 |:--|:--|
 |`ripple`| Basically effect like the Google material design. |
-|`flash` | The background color will flicker in the wink of an eye. |
+|`flash` | Still working on it. |
 |`wave` | Still working on it. |  
 
 
