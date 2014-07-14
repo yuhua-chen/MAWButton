@@ -3,7 +3,7 @@ MAWButton
 
 A ripple button inspired by Google material design.
 
-![Demo](https://raw.githubusercontent.com/yuhua-chen/MAWButton/master/demo.html)
+![Demo](https://raw.githubusercontent.com/yuhua-chen/MAWButton/master/demo.gif)
 
 
 Required
