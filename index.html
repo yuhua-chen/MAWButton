@@ -1,17 +1,57 @@
 <html>
 <head>
-    <title>MAWButton Demo</title>
+    <title>MAWButton.js Demo</title>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/mawbutton.css"/>
+    <style>
+    	html, body {
+    		margin:0;
+    		padding: 0;
+    		background: rgb(255,255,255); /* Old browsers */
+	    	background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
+	    	background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
+	    	background: linear-gradient(rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%);
+    	}
+    	#wrap { display:table; height: 90%; width: 100%; text-align: center;}
+		#cell { display:table-cell; vertical-align:middle;}
+		h1 { 
+			font-family: 'Lobster',cursive;
+			font-size: 3.0em;
+		
+			background: rgb(122,188,255); /* Old browsers */
+			background: -webkit-linear-gradient(rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%);
+			background: -o-linear-gradient(rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%);
+			background: linear-gradient(rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); 
+
+			-webkit-background-clip: text;
+			-o-background-clip: text;
+			-moz-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-o-text-fill-color: transparent;
+			-mos-text-fill-color: transparent;
+		}
+		p { line-height: 2.0em;}
+		a { text-decoration: none; font-size: 14px; color: #336699;}
+		a:hover { text-decoration: underline; color: #7db9e8;}
+    </style>
 </head>
 <body>
 
-    <button>Click Me</button>
-    <button class="green">Click Me</button>
-    <button class="blue">Click Me</button>
-    <button class="red">Click Me</button>
-
-    <a href="https://github.com/yuhua-chen/MAWButton/" target="_blank">View on GitHub</a>
+	<div id="wrap">
+	    <div id="cell">
+	        <h1>MAWButton.js</h1>
+	        <div>
+				<button>Click Me</button>
+				<button class="green">Click Me</button>
+				<button class="blue">Click Me</button>
+				<button class="red">Click Me</button>
+	        </div>
+			<p>
+				<a href="https://github.com/yuhua-chen/MAWButton/" target="_blank">View on GitHub</a>	
+			</p>
+	    </div>
+	</div>
+    
 	<script type="text/javascript" src="js/vendor/jquery.js"></script>
 	<script type="text/javascript" src="js/mawbutton.js"></script>
     <script type="text/javascript">
