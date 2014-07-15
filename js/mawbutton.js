@@ -10,10 +10,10 @@
 		return this.each(function() {
 			var $this = $(this);
 			$this.addClass('mawbutton')
-			.append('<div class="mawbutton-'+settings.effect+'"></div>')
+			
 			.on('click', function(e) {		//bind click event
 				e.preventDefault();
-
+				$this.append('<div class="mawbutton-'+settings.effect+'" ></div>');
 				// Fetch click position and size
 				var posX = $this.offset().left,
 					posY = $this.offset().top;
@@ -24,7 +24,8 @@
 				var ratio = settings.scale / 2;    							
 
 				//Animate Start
-				$effectElem = $this.find(".mawbutton-"+settings.effect);
+				$effectElem = $this.children(':last');
+
 				$effectElem.addClass("mawbutton-stop")
 							.css({
 								"top" : targetY,
@@ -42,14 +43,14 @@
 
 				//Animate End
 				setTimeout(function(){
-					$effectElem.addClass("mawbutton-ripple-out").css({
+					$effectElem.addClass("mawbutton-"+settings.effect+"-out").css({
 						"transition-duration" : settings.speed+"ms",
 						"-webkit-transition-duration" : settings.speed+"ms",
 						"-moz-transition-duration" : settings.speed+"ms",
 						"-o-transition-duration" : settings.speed+"ms"
 					});
 					setTimeout(function(){
-						$effectElem.removeClass("mawbutton-ripple-out").addClass("mawbutton-stop").attr("style","");
+						$this.find(".mawbutton-"+settings.effect).first().remove();
 					},settings.speed);
 				}, settings.speed);
 			});

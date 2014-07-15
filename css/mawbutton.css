@@ -23,7 +23,7 @@
   border-radius: 100%;
   width: 0px;
   height: 0px;
-  background: rgba(0,0,0, .05);
+  background: rgba(248,248,255, .2);
   transition: all 150ms ease-out;
    -webkit-transition: all 150ms ease-out;
    -moz-transition: all 150ms ease-out;
@@ -31,9 +31,9 @@
 }
 
 .mawbutton .mawbutton-ripple-out{
-  background: rgba(0,0,0, .0);
-  transition: background 150ms ease-out;
-   -webkit-transition: background 150ms ease-out;
+  background: rgba(248,248,255, .0);
+  transition: background 150ms ease-out opacity 150ms ease-out;
+   -webkit-transition: background 150ms ease-out opacity 150ms ease-out;
    -moz-transition: background 150ms ease-out;
    -o-transition: background 150ms ease-out;
 }
