@@ -5,6 +5,7 @@ A ripple button inspired by Google material design.
 
 ![Demo](https://raw.githubusercontent.com/yuhua-chen/MAWButton/master/demo.gif)
 
+[Demo site](http://yuhua-chen.github.io/MAWButton/)
 
 Required
 ========
