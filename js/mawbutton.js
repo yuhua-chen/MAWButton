@@ -4,23 +4,33 @@
 		var settings = $.extend({
 			effect : "ripple",
 			scale : 3,
-			speed : 300		// ms
+			speed : 300,		// ms
+			transEnd : function(){}
 		}, options);
 
 		return this.each(function() {
 			var $this = $(this);
+			var event_sup = ('ontouchstart' in window )?'touchstart':'click';
+
 			$this.addClass('mawbutton')
-			
-			.on('click', function(e) {		//bind click event
+			.on( event_sup, function(e) {		//bind click event
 				e.preventDefault();
 				$this.append('<div class="mawbutton-'+settings.effect+'" ></div>');
 				// Fetch click position and size
 				var posX = $this.offset().left,
 					posY = $this.offset().top;
+
 				var w = $this.width(),
 					h = $this.height();
 				var targetX= e.pageX - posX;
 				var targetY= e.pageY - posY;
+
+				//detect d
+				if( !targetX || !targetY){
+					 targetX = e.originalEvent.touches[0].pageX;
+					 targetY = e.originalEvent.touches[0].pageY;
+				}
+
 				var ratio = settings.scale / 2;    							
 
 				//Animate Start
@@ -51,6 +61,7 @@
 					});
 					setTimeout(function(){
 						$this.find(".mawbutton-"+settings.effect).first().remove();
+						settings.transEnd.call(this);
 					},settings.speed);
 				}, settings.speed);
 			});

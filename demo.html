@@ -15,9 +15,12 @@
 	<script type="text/javascript" src="js/mawbutton.js"></script>
     <script type="text/javascript">
         $('button').mawbutton({
-            speed : 300,
-            scale : 5,
-            effect : "ripple"
+            speed : 250,
+            scale : 6,
+            effect : "ripple",
+            transEnd:function(){
+                console.log('end');
+            }
         });
     </script>
 </body>
