@@ -64,6 +64,7 @@ Options
 |`speed` | 300   |int | The duration which are given in milliseconds of effect.|
 |`scale` | 3     |int | The size how the ripple will scale to in animation.| 
 |`effect`| ripple|string| Determine which effect you want to use.|
+|`transitionEnd`| function(){} | function | Callback after transition end. | 
 
 Effects
 ======  
