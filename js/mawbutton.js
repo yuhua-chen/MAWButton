@@ -20,6 +20,7 @@
 				// Fetch click position and size
 				var posX = $this.offset().left,
 					posY = $this.offset().top;
+
 				var w = $this.width(),
 					h = $this.height();
 				var targetX= e.pageX - posX;
