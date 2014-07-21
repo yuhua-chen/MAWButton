@@ -10,13 +10,13 @@
 
 		return this.each(function() {
 			var $this = $(this);
-			var supportEvent = ('ontouchstart' in window ) ? 'touchstart':'click';
+			var supportEvent = ('ontouchstart' in window ) ? 'touchstart':'mousedown';
 
 			$this.addClass('mawbutton')
 			.on(supportEvent, function(e) {		//bind touch/click event
 				e.preventDefault();
 				$this.append('<div class="mawbutton-'+settings.effect+'" ></div>');
-				
+				var $effectElem = $this.children(':last');
 				// Fetch click position and size
 				var posX = $this.offset().left,
 					posY = $this.offset().top;
@@ -35,7 +35,6 @@
 				var ratio = settings.scale / 2;    							
 
 				//Animate Start
-				$effectElem = $this.children(':last');
 				$effectElem.addClass("mawbutton-stop")
 							.css({
 								"top" : targetY,

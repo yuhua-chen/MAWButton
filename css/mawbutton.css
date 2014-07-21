@@ -18,12 +18,14 @@
     -o-user-select: none; 
 }
 
+
+
 .mawbutton .mawbutton-ripple{
   position: absolute;
   border-radius: 100%;
   width: 0px;
   height: 0px;
-  background: rgba(248,248,255, .2);
+  background: rgba(248,248,255, .3);
   transition: all 150ms ease-out;
    -webkit-transition: all 150ms ease-out;
    -moz-transition: all 150ms ease-out;
