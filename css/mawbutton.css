@@ -29,17 +29,17 @@
   height: 0px;
   background: rgba(248,248,255, .3);
   transition-property: border-radius,width,height,background,margin-left,margin-top;
-  transition-duration: 150ms,150ms,150ms,150ms,150ms,150ms;
-  transition-timing-function: ease-out,ease-out,ease-out,ease-out,ease-out,ease-out;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
   -webkit-transition-property: border-radius,width,height,background,margin-left,margin-top;
-  -webkit-transition-duration:150ms,150ms,150ms,150ms,150ms,150ms;
-  -webkit-transition-timing-function:ease-out,ease-out,ease-out,ease-out,ease-out,ease-out;
+  -webkit-transition-duration:150ms;
+  -webkit-transition-timing-function:ease-out;
   -moz-transition-property: border-radius,width,height,background,margin-left,margin-top;
-  -moz-transition-duration:150ms,150ms,150ms,150ms,150ms,150ms;
-  -moz-transition-timing-function:ease-out,ease-out,ease-out,ease-out,ease-out,ease-out;  
+  -moz-transition-duration:150ms;
+  -moz-transition-timing-function:ease-out;  
   -o-transition-property: border-radius,width,height,background,margin-left,margin-top;
-  -o-transition-duration:150ms,150ms,150ms,150ms,150ms,150ms;
-  -o-transition-timing-function:ease-out,ease-out,ease-out,ease-out,ease-out,ease-out;    
+  -o-transition-duration:150ms;
+  -o-transition-timing-function:ease-out;    
 }
 
 .mawbutton .mawbutton-ripple-out{
