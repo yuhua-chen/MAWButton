@@ -1,3 +1,5 @@
+
+
 .mawbutton
 {
 	outline: none;
@@ -26,10 +28,18 @@
   width: 0px;
   height: 0px;
   background: rgba(248,248,255, .3);
-  transition: all 150ms ease-out;
-   -webkit-transition: all 150ms ease-out;
-   -moz-transition: all 150ms ease-out;
-   -o-transition: all 150ms ease-out;
+  transition-property: border-radius,width,height,background,margin-left,margin-top;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  -webkit-transition-property: border-radius,width,height,background,margin-left,margin-top;
+  -webkit-transition-duration:150ms;
+  -webkit-transition-timing-function:ease-out;
+  -moz-transition-property: border-radius,width,height,background,margin-left,margin-top;
+  -moz-transition-duration:150ms;
+  -moz-transition-timing-function:ease-out;  
+  -o-transition-property: border-radius,width,height,background,margin-left,margin-top;
+  -o-transition-duration:150ms;
+  -o-transition-timing-function:ease-out;    
 }
 
 .mawbutton .mawbutton-ripple-out{
@@ -41,6 +51,8 @@
 }
 
 .mawbutton .mawbutton-stop{
+  -moz-transition: none !important;
+   -o-transition: none !important;
 	-webkit-transition: none !important;
  	 transition: none !important;
 }
