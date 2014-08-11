@@ -13,8 +13,7 @@
 			var supportEvent = ('ontouchstart' in window ) ? 'touchstart':'mousedown';
 			$this.addClass('mawbutton')
 			.on(supportEvent, function(e) {		//bind touch/click event
-				e.preventDefault();
-				$this.append('<div class="mawbutton-'+settings.effect+'"></div>');	
+				$this.append('<div class="mawbutton-'+settings.effect+'"></div>');
 				// Fetch click position and size
 				var posX = $this.offset().left,
 					posY = $this.offset().top;
